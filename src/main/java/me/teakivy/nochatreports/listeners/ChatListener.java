@@ -14,8 +14,11 @@ public class ChatListener implements Listener {
         if (Config.isPaperWorkaround()) {
             e.setCancelled(true);
 
+            String message = String.format(e.getFormat(), e.getPlayer().getDisplayName(), e.getMessage());
+
+            Bukkit.getConsoleSender().sendMessage(message);
             for (Player toPlayer : Bukkit.getOnlinePlayers()) {
-                toPlayer.sendMessage(String.format(e.getFormat(), e.getPlayer().getDisplayName(), e.getMessage()));
+                toPlayer.sendMessage(message);
             }
 
             return;
