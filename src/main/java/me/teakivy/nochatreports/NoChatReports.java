@@ -12,7 +12,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
-import java.util.Locale;
 import java.util.Objects;
 
 public final class NoChatReports extends JavaPlugin {
