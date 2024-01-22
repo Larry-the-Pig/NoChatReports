@@ -29,7 +29,7 @@ public final class NoChatReports extends JavaPlugin {
         updateConfig();
         
         if (getConfig().getBoolean("config.usage-data")) {
-            Logger.info("Usage data reporting disabled");
+            Logger.info("Usage data reporting enabled.");
             registerMetrics();
         }
 
